@@ -96,6 +96,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Guess a Letter"/>
+                                        <connections>
+                                            <action selector="guessLetterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oqn-zs-c0b"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -107,6 +110,10 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Play Again"/>
+                                <connections>
+                                    <action selector="guessLetterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ex-nN-qrL"/>
+                                    <action selector="playAgainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oyg-BL-iU8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've Made Zero Guesses" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyr-7l-AEz">
                                 <rect key="frame" x="16" y="242" width="288" height="20.5"/>
@@ -144,6 +151,18 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vyr-7l-AEz" secondAttribute="trailing" constant="16" id="sR4-io-bqX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flowerImageView" destination="XMM-iX-2PA" id="FDR-tB-Ve2"/>
+                        <outlet property="gameStatusMessageLabel" destination="vyr-7l-AEz" id="7Ow-RG-1QX"/>
+                        <outlet property="guessALetterButton" destination="POA-tz-6I6" id="FSn-Xs-yik"/>
+                        <outlet property="guessedLetterTextField" destination="Ur5-nZ-p9j" id="1vf-ES-uya"/>
+                        <outlet property="playAgainButton" destination="AYQ-2M-r8O" id="TUQ-2f-mwD"/>
+                        <outlet property="wordBeingRevealedLabel" destination="pKc-Wx-ot2" id="JsT-rk-Osp"/>
+                        <outlet property="wordsGuessedLabel" destination="BPX-8w-F3h" id="LlM-WZ-sqk"/>
+                        <outlet property="wordsInGame" destination="xwS-u4-7UR" id="hbk-7Z-5RY"/>
+                        <outlet property="wordsMissedLabel" destination="bXM-jr-q59" id="aMZ-I7-auj"/>
+                        <outlet property="wordsRemainingLabel" destination="ddT-Tc-YSn" id="ihh-up-SFd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
