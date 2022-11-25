@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  WordGardenAPP Storyboard
 //
-//  Created by Alexa Mendoza on 11/14/22.
+//  Created by Alexandra Mendoza on 11/14/22.
 //
 
 import UIKit
